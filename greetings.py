@@ -8,6 +8,8 @@ def say_goodbye(name):
     """
     A simple farewell function
     """
+   if not name or not name.strip():
+        return "Goodbye, stranger! See you soon."
     return f"Goodbye, {name}! See you soon."
 
 if __name__ == "__main__":
